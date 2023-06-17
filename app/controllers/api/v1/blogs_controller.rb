@@ -1,4 +1,4 @@
-class BlogsController < ApplicationController
+class Api::V1::BlogsController < ApplicationController
     skip_ before_action :authorized
 
     def index
