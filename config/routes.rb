@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :members
   resources :categories
   resources :names
   resources :products
@@ -12,6 +13,8 @@ Rails.application.routes.draw do
       resources :products, only: [:index, :show, :create, :update, :destroy] do
         resources :categories, only: [:index, :show, :create, :update, :destroy]
       end
+
+      resources :members, only: [:index, :show, :create, :update, :destroy]
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end
