@@ -11,3 +11,16 @@ blogs = Blog.create([
     {title: "The Best Blog", author: "John Doe", excerpt: "This is the best blog ever!"},
     {title: "The Worst Blog", author: "Jane Doe", excerpt: "This is the worst blog ever!"}
 ])
+
+
+products = Product.create([
+    {name: "Product 1", photo: "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"},
+    {name: "Product 2", photo: "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"},
+
+])
+
+
+categories = Category.create([
+    {name: "Category 1", product_id: 1, price: 10, sizes: "small, medium, large"},
+    {name: "Category 2", product_id: 2, price: 20, sizes: "small, medium, large"}
+])
