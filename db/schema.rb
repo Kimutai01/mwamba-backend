@@ -25,8 +25,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_24_100028) do
     t.string "category"
     t.integer "quantity", default: 1
     t.integer "price"
+    t.string "picture"
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_cart_items_on_user_id"
   end
 
   create_table "categories", force: :cascade do |t|
@@ -66,5 +69,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_24_100028) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "cart_items", "users"
   add_foreign_key "categories", "products"
 end
