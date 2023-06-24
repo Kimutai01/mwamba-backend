@@ -20,13 +20,15 @@ class Api::V1::CartItemsController < ApplicationController
     def update
         cart_item = CartItem.find(params[:id])
         cart_item.update(cart_item_params)
-        render json: cart_item
+        carts = CartItem.all
+        render json: carts
     end
 
     def destroy
         cart_item = CartItem.find(params[:id])
         cart_item.destroy
-        render json: cart_item
+        carts = CartItem.all
+        render json: carts
     end
 
     private
@@ -34,7 +36,7 @@ class Api::V1::CartItemsController < ApplicationController
     def cart_item_params
         params.require(:cart_item).permit(:name, :size, :category, :quantity, :price)
     end
-    
+
 
 
 end

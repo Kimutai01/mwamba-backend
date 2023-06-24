@@ -14,13 +14,13 @@ blogs = Blog.create([
 
 
 products = Product.create([
-    {name: "Product 1", photo: "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"},
+    {name: "Home Jersey", photo: "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"},
     {name: "Product 2", photo: "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"},
 
 ])
 
 
 categories = Category.create([
-    {name: "Category 1", product_id: 1, price: 10, sizes: "small, medium, large"},
-    {name: "Category 2", product_id: 2, price: 20, sizes: "small, medium, large"}
+    {name: "kiddie", product_id: 1, price: 2000, sizes: ["small", "medium", "large", "extra large"]},
+    {name: "adult", product_id: 1, price: 4000, sizes: ["small", "medium", "large", "extra large"]}
 ])
