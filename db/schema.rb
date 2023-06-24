@@ -10,11 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_17_052312) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_24_100028) do
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.string "author"
     t.string "excerpt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cart_items", force: :cascade do |t|
+    t.string "name"
+    t.string "size"
+    t.string "category"
+    t.integer "quantity", default: 1
+    t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,6 +37,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_17_052312) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_categories_on_product_id"
+  end
+
+  create_table "members", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone_number"
+    t.date "date_of_birth"
+    t.string "county"
+    t.string "membership_category"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
