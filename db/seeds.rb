@@ -14,15 +14,22 @@ blogs = Blog.create([
 
 
 products = Product.create([
-    {name: "Home Jersey", photo: "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", rotating_images: ["https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"]},
-    {name: "Product 2", photo: "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", rotating_images: ["https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", "https://images.unsplash.com/photo-1612835362596-4b0b2b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"]},
+    {name: "Home Jersey", photo: "https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg", rotating_images: ["https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg"]},
+    {name: "Away Jersey", photo: "https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg", rotating_images: ["https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg"]},
+    {name: "Hat", photo: "https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg", rotating_images: ["https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687665209/chino-rocha-v_sciNJhbnM-unsplash_fsmr8t.jpg"]}
+
 
 ])
 
 
 categories = Category.create([
     {name: "kiddie", product_id: 1, price: 2000, sizes: ["small", "medium", "large", "extra large"]},
-    {name: "adult", product_id: 1, price: 4000, sizes: ["small", "medium", "large", "extra large"]}
+    {name: "adult", product_id: 1, price: 4000, sizes: ["small", "medium", "large", "extra large"]},
+    {name: "kiddie", product_id: 2, price: 2000, sizes: ["small", "medium", "large", "extra large"]},
+    {name: "adult", product_id: 2, price: 4000, sizes: ["small", "medium", "large", "extra large"]},
+    {name: "kiddie", product_id: 3, price: 2000, sizes: ["small", "medium", "large", "extra large"]},
+    {name: "adult", product_id: 3, price: 4000, sizes: ["small", "medium", "large", "extra large"]}
+
 ])
 
 puts "Seeding done!"
