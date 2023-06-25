@@ -21,7 +21,7 @@ class Api::V1::CategoriesController < ApplicationController
     private
 
     def category_params
-        params.permit(:name, :product_id, :price, :sizes)
+        params.permit(:name, :product_id, :price, :sizes => [])
         
     end
 

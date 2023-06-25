@@ -40,7 +40,7 @@ class Api::V1::ProductsController < ApplicationController
 
     private
     def product_params  
-        params.require(:product).permit(:name, :photo)
+        params.require(:product).permit(:name, :photo, :rotating_images => [])
     end
 
 
