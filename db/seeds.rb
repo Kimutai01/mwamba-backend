@@ -15,7 +15,7 @@ blogs = Blog.create([
 
 products = Product.create([
 
-    {name: "Home Jersey", photo: "https://res.cloudinary.com/dakiak4mc/image/upload/v1687872349/team2_l7ibk8.png", rotating_images: ["https://res.cloudinary.com/dakiak4mc/image/upload/v1687872358/team3_xfakyq.png", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687872369/team4_kv2vud.png", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687872316/team5_dqaa8x.png"]},
+    {name: "Home Jersey", photo: "https://res.cloudinary.com/dakiak4mc/image/upload/v1687873789/WhatsApp_Image_2023-06-27_at_4.47.29_PM_aztzff.jpg", rotating_images: ["https://res.cloudinary.com/dakiak4mc/image/upload/v1687872358/team3_xfakyq.png", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687872369/team4_kv2vud.png", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687872316/team5_dqaa8x.png"]},
    
     {name: "Away Jersey", photo: "https://res.cloudinary.com/dakiak4mc/image/upload/v1687871015/MWAMBA_RUGBY_-_FRONT_sogptt.png", rotating_images: ["https://res.cloudinary.com/dakiak4mc/image/upload/v1687871015/MWAMBA_RUGBY_-_FRONT_sogptt.png", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687871040/MWAMBA_RUGBY_-_BACK_spbtbi.png", "https://res.cloudinary.com/dakiak4mc/image/upload/v1687871027/MWAMBA_RUGBY_-_FRONT_LEFT_vzton9.png"]},
   
