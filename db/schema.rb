@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_24_100028) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_25_174005) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -45,6 +45,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_24_100028) do
     t.index ["product_id"], name: "index_categories_on_product_id"
   end
 
+  create_table "fixtures", force: :cascade do |t|
+    t.string "season_status"
+    t.string "type_of_game"
+    t.string "date"
+    t.string "location"
+    t.string "team_one_name"
+    t.string "team_one_image"
+    t.string "team_two_name"
+    t.string "team_two_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "members", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -61,6 +74,22 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_24_100028) do
     t.string "name"
     t.string "photo"
     t.string "rotating_images", default: [], array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "results", force: :cascade do |t|
+    t.string "season_status"
+    t.string "type_of_game"
+    t.string "date"
+    t.string "location"
+    t.string "team_one_name"
+    t.string "team_one_image"
+    t.string "team_one_score"
+    t.string "team_two_name"
+    t.string "team_two_image"
+    t.string "team_two_score"
+    t.string "match_report"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

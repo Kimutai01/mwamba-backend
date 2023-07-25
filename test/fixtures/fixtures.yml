@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  season_status: MyString
+  type_of_game: MyString
+  date: MyString
+  location: MyString
+  team_one_name: MyString
+  team_one_image: MyString
+  team_two_name: MyString
+  team_two_image: MyString
+
+two:
+  season_status: MyString
+  type_of_game: MyString
+  date: MyString
+  location: MyString
+  team_one_name: MyString
+  team_one_image: MyString
+  team_two_name: MyString
+  team_two_image: MyString

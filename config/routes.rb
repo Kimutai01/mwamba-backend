@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :fixtures
+  resources :results
   resources :cart_items
   resources :members
   resources :categories
