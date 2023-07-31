@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Message: MyString
+  Success: MyString
+  Status: 1
+  Amount: 1
+  transaction_code: MyString
+  transaction_reference: MyString
+
+two:
+  Message: MyString
+  Success: MyString
+  Status: 1
+  Amount: 1
+  transaction_code: MyString
+  transaction_reference: MyString

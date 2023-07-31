@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mpesas
   resources :fixtures
   resources :results
   resources :cart_items
@@ -23,6 +24,7 @@ Rails.application.routes.draw do
       resources :members, only: [:index, :show, :create, :update, :destroy]
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
+      
     end
   end
 end
