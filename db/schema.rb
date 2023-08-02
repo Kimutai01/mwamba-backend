@@ -27,6 +27,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_02_070048) do
     t.string "total_price"
     t.string "phone_number"
     t.string "status"
+    t.string "customer_name"
+    t.string "customer_email"
+    t.string "customer_location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
