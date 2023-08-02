@@ -1,0 +1,14 @@
+class CreateOrders < ActiveRecord::Migration[7.0]
+  def change
+    create_table :orders do |t|
+      t.string :products , array: true, default: []
+      t.string :quantity
+      t.string :total_price
+      t.string :phone_number
+      t.string :status  , default: "pending"
+      t.references :user, null: false, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end

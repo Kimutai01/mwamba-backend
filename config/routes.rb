@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   resources :mpesas
   resources :fixtures
   resources :results
@@ -16,8 +17,10 @@ Rails.application.routes.draw do
       resources :users, only: [:create]
       resources :fixtures, only: [:index, :show, :create, :update, :destroy]
       resources :cart_items, only: [:index, :show, :create, :update, :destroy]
+      resources :orders
       resources :products, only: [:index, :show, :create, :update, :destroy] do
         resources :categories, only: [:index, :show, :create, :update, :destroy]
+
 
       end
 
