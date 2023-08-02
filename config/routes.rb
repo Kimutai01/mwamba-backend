@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   
   resources :mpesas
+  get 'mpesas/list_for_a_number/:phone_number', to: 'mpesas#list_for_a_number'
   resources :fixtures
   resources :results
   resources :cart_items

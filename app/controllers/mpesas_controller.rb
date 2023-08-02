@@ -10,6 +10,12 @@ class MpesasController < ApplicationController
         mpesa = Mpesa.create(mpesa_params)
         render json: mpesa
     end
+
+
+    def list_for_a_number
+        mpesas = Mpesa.where(transaction_reference: params[:phone_number])
+        render json: mpesas
+    end
     
 
     private 

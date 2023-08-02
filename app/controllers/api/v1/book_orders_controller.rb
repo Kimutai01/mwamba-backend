@@ -25,7 +25,7 @@ class Api::V1::BookOrdersController < ApplicationController
     private
 
     def book_order_params
-        params.require(:book_order).permit(:product, :total_price, :phone_number, :status, :user_id)
+        params.require(:book_order).permit(:product, :total_price, :phone_number, :status)
     end
-    
+
 end
