@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   
   resources :mpesas
   resources :fixtures
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :blogs, only: [:index, :show, :create, :update, :destroy]
       resources :users, only: [:create]
+      resources :book_orders
       resources :fixtures, only: [:index, :show, :create, :update, :destroy]
       resources :cart_items, only: [:index, :show, :create, :update, :destroy]
       resources :orders
