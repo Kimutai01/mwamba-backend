@@ -85,9 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: mwamba_development_production
-  username: postgres
-  password: <%= ENV["MWAMBA_DEVELOPMENT_DATABASE_PASSWORD"] %>
 
 
   # production:
