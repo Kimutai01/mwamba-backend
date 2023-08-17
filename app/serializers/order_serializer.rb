@@ -1,3 +1,3 @@
 class OrderSerializer < ActiveModel::Serializer
-  attributes :id, :products, :quantity, :total_price, :phone_number, :status , :user_id
+  attributes :id, :product, :total_price, :phone_number, :status  , :customer_location , :customer_name , :customer_email , :category , :size
 end

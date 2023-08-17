@@ -94,15 +94,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_02_070048) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string "products", default: [], array: true
+    t.string "product"
     t.string "quantity"
     t.string "total_price"
     t.string "phone_number"
     t.string "status", default: "pending"
-    t.bigint "user_id", null: false
+    t.string "customer_name"
+    t.string "customer_email"
+    t.string "customer_location"
+    t.string "category"
+    t.string "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -139,5 +142,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_02_070048) do
 
   add_foreign_key "cart_items", "users"
   add_foreign_key "categories", "products"
-  add_foreign_key "orders", "users"
 end
