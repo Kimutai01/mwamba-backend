@@ -16,6 +16,12 @@ class MpesasController < ApplicationController
         mpesas = Mpesa.where(transaction_reference: params[:phone_number])
         render json: mpesas
     end
+
+    def destroy
+        mpesa = Mpesa.find(params[:id])
+        mpesa.destroy
+        render json: mpesa
+    end
     
 
     private 
